@@ -26,7 +26,7 @@ import CoreData
 class LoginViewController: UIViewController {
     
     var managedObjectContext: NSManagedObjectContext? = nil
-    let MyKeychainWrapper = KeychainItemWrapper()
+    
     let createLoginButtonTag = 0
     let loginButtonTag = 1
     
@@ -38,6 +38,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // 1.
         let hasLogin = NSUserDefaults.standardUserDefaults().boolForKey("hasLoginKey")
         
@@ -85,8 +86,19 @@ class LoginViewController: UIViewController {
             }
             
             // 5.You then use mySetObject and writeToKeychain to save the password text to Keychain. You then set hasLoginKey in NSUserDefaults to true to indicate that a password has been saved to the keychain. You set the login button’s tag to loginButtonTag so that it will prompt the user to log in the next time they run your app, rather than prompting the user to create a login. Finally, you dismiss loginView.
-//            MyKeychainWrapper.mySetObject(passwordTextField.text, forKey:kSecValueData)
-//            MyKeychainWrapper.writeToKeychain()
+
+            let myKeychainWrapper = KeychainItemWrapper(identifier: "com.zingoer.abc", accessGroup: nil)
+            
+            let password = passwordTextField.text!.dataUsingEncoding(NSUTF8StringEncoding)
+//            let tmpData: NSMutableData = NSMutableData(capacity: 256)!
+//            let ka: NSKeyedArchiver = NSKeyedArchiver(forWritingWithMutableData: tmpData)
+//            ka.encodeObject(password)
+//            ka.finishEncoding()
+            
+            debugPrint("Data will be saved: \(password)")
+            
+            myKeychainWrapper.setObject(password, forKey: kSecValueData)
+
             NSUserDefaults.standardUserDefaults().setBool(true, forKey: "hasLoginKey")
             NSUserDefaults.standardUserDefaults().synchronize()
             loginButton.tag = loginButtonTag
@@ -108,14 +120,52 @@ class LoginViewController: UIViewController {
     }
     
     func checkLogin(username: String, password: String ) -> Bool {
-//        if password == MyKeychainWrapper.myObjectForKey(kSecValueData) as? String && username == NSUserDefaults.standardUserDefaults().valueForKey("username") as? String{
-//            return true
-//        }else{
-//            return false
-//        }
-        return false
+        let myKeychainWrapper = KeychainItemWrapper(identifier: "com.zingoer.abc", accessGroup: nil)
+        let passwordFromKC = myKeychainWrapper.objectForKey(kSecValueData) as? NSData
+        debugPrint("\(passwordFromKC)")
+//        let data:NSData = myKeychainWrapper.objectForKey(kSecValueData) as! NSData
+//        let kua: NSKeyedUnarchiver = NSKeyedUnarchiver(forReadingWithData: data)
+//        let passwordFromKC: String = kua.decodeObject() as! String
+//        kua.finishDecoding()
+        let string = String(data: passwordFromKC!, encoding: NSUTF8StringEncoding)
+        
+        if password == string && username == NSUserDefaults.standardUserDefaults().valueForKey("username") as? String{
+            return true
+        }else{
+            return false
+        }
+
     }
     
     
+    @IBAction func cleanKeyChain(sender: AnyObject) {
+        NSUserDefaults.standardUserDefaults().setBool(false, forKey: "hasLoginKey")
+        NSUserDefaults.standardUserDefaults().removeObjectForKey("username")
+        NSUserDefaults.standardUserDefaults().synchronize()
+        let myKeychainWrapper = KeychainItemWrapper(identifier: "com.zingoer.abc", accessGroup: nil)
+        myKeychainWrapper.resetKeychainItem()
+        
+        // 1.
+        let hasLogin = NSUserDefaults.standardUserDefaults().boolForKey("hasLoginKey")
+        
+        // 2.
+        if hasLogin {
+            loginButton.setTitle("Login", forState: UIControlState.Normal)
+            loginButton.tag = loginButtonTag
+            createInfoLabel.hidden = true
+        } else {
+            loginButton.setTitle("Create", forState: UIControlState.Normal)
+            loginButton.tag = createLoginButtonTag
+            createInfoLabel.hidden = false
+        }
+        
+        // 3.
+        if let storedUsername = NSUserDefaults.standardUserDefaults().valueForKey("username") as? String {
+            usernameTextField.text = storedUsername as String
+        }else{
+            usernameTextField.text = ""
+        }
+
+    }
     
 }
