@@ -22,6 +22,7 @@
 
 import UIKit
 import CoreData
+import MultipleKeychainKits
 
 class LoginViewController: UIViewController {
     
@@ -29,6 +30,7 @@ class LoginViewController: UIViewController {
     
     let createLoginButtonTag = 0
     let loginButtonTag = 1
+    let keyManager = KeyManager()
     
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var usernameTextField: UITextField!
@@ -90,15 +92,16 @@ class LoginViewController: UIViewController {
             let myKeychainWrapper = KeychainItemWrapper(identifier: "com.zingoer.abc", accessGroup: nil)
             
             let password = passwordTextField.text!.dataUsingEncoding(NSUTF8StringEncoding)
-//            let tmpData: NSMutableData = NSMutableData(capacity: 256)!
-//            let ka: NSKeyedArchiver = NSKeyedArchiver(forWritingWithMutableData: tmpData)
-//            ka.encodeObject(password)
-//            ka.finishEncoding()
             
             debugPrint("Data will be saved: \(password)")
+            debugPrint("Keychain AttrAccount: \(myKeychainWrapper.objectForKey(kSecAttrAccount)), Keychain Value: \(myKeychainWrapper.objectForKey(kSecValueData))")
             
-            myKeychainWrapper.setObject(password, forKey: kSecValueData)
-
+            myKeychainWrapper.setObject(password!, forKey: kSecValueData)
+            
+            debugPrint("Keychain AttrAccount: \(myKeychainWrapper.objectForKey(kSecAttrAccount)), Keychain Value: \(myKeychainWrapper.objectForKey(kSecValueData))")
+            
+            keyManager.generateKey()
+            
             NSUserDefaults.standardUserDefaults().setBool(true, forKey: "hasLoginKey")
             NSUserDefaults.standardUserDefaults().synchronize()
             loginButton.tag = loginButtonTag
@@ -123,13 +126,13 @@ class LoginViewController: UIViewController {
         let myKeychainWrapper = KeychainItemWrapper(identifier: "com.zingoer.abc", accessGroup: nil)
         let passwordFromKC = myKeychainWrapper.objectForKey(kSecValueData) as? NSData
         debugPrint("\(passwordFromKC)")
-//        let data:NSData = myKeychainWrapper.objectForKey(kSecValueData) as! NSData
-//        let kua: NSKeyedUnarchiver = NSKeyedUnarchiver(forReadingWithData: data)
-//        let passwordFromKC: String = kua.decodeObject() as! String
-//        kua.finishDecoding()
+
         let string = String(data: passwordFromKC!, encoding: NSUTF8StringEncoding)
         
-        if password == string && username == NSUserDefaults.standardUserDefaults().valueForKey("username") as? String{
+        let key = keyManager.key
+        debugPrint("Fetch the key from framework keychain: \(key)")
+        
+        if password == string && "generatedKey" == key && username == NSUserDefaults.standardUserDefaults().valueForKey("username") as? String{
             return true
         }else{
             return false

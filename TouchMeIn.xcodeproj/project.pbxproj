@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10644A491BE1725A0014122A /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 10644A481BE1725A0014122A /* KeychainItemWrapper.m */; };
+		10644A731BE256FE0014122A /* MultipleKeychainKits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10644A721BE256FE0014122A /* MultipleKeychainKits.framework */; };
+		10644A741BE256FE0014122A /* MultipleKeychainKits.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10644A721BE256FE0014122A /* MultipleKeychainKits.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2A2CDC9719FB441200BDF4E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2CDC9619FB441200BDF4E3 /* AppDelegate.swift */; };
 		2A2CDC9A19FB441200BDF4E3 /* TouchMeIn.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A2CDC9819FB441200BDF4E3 /* TouchMeIn.xcdatamodeld */; };
 		2A2CDC9C19FB441200BDF4E3 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2CDC9B19FB441200BDF4E3 /* MasterViewController.swift */; };
@@ -30,10 +31,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		10644A751BE256FF0014122A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				10644A741BE256FE0014122A /* MultipleKeychainKits.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		10644A401BE146D40014122A /* TouchMeIn-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TouchMeIn-Bridging-Header.h"; sourceTree = "<group>"; };
-		10644A471BE1725A0014122A /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
-		10644A481BE1725A0014122A /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		10644A721BE256FE0014122A /* MultipleKeychainKits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = MultipleKeychainKits.framework; path = "/Users/xpang/Library/Developer/Xcode/DerivedData/MultipleKeychainWorkspace-dugdrpzchgrdnzfkamorlaihlyrt/Build/Products/Debug-iphoneos/MultipleKeychainKits.framework"; sourceTree = "<absolute>"; };
 		2A2CDC9119FB441200BDF4E3 /* TouchMeIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchMeIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A2CDC9519FB441200BDF4E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A2CDC9619FB441200BDF4E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10644A731BE256FE0014122A /* MultipleKeychainKits.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +86,7 @@
 		2A2CDC8819FB441200BDF4E3 = {
 			isa = PBXGroup;
 			children = (
+				10644A721BE256FE0014122A /* MultipleKeychainKits.framework */,
 				2A2CDC9319FB441200BDF4E3 /* TouchMeIn */,
 				2A2CDCAE19FB441200BDF4E3 /* TouchMeInTests */,
 				2A2CDC9219FB441200BDF4E3 /* Products */,
@@ -94,8 +110,6 @@
 				2A2CDC9D19FB441200BDF4E3 /* DetailViewController.swift */,
 				2A94F6E519FE7D31007CED2D /* Note.swift */,
 				2AC21FA01A005A88003FD06F /* LoginViewController.swift */,
-				10644A471BE1725A0014122A /* KeychainItemWrapper.h */,
-				10644A481BE1725A0014122A /* KeychainItemWrapper.m */,
 				2A2CDC9F19FB441200BDF4E3 /* Main.storyboard */,
 				2A2CDCA219FB441200BDF4E3 /* Images.xcassets */,
 				2A2CDCA419FB441200BDF4E3 /* LaunchScreen.xib */,
@@ -141,6 +155,7 @@
 				2A2CDC8D19FB441200BDF4E3 /* Sources */,
 				2A2CDC8E19FB441200BDF4E3 /* Frameworks */,
 				2A2CDC8F19FB441200BDF4E3 /* Resources */,
+				10644A751BE256FF0014122A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,7 +254,6 @@
 				2A2CDC9719FB441200BDF4E3 /* AppDelegate.swift in Sources */,
 				2A2CDC9C19FB441200BDF4E3 /* MasterViewController.swift in Sources */,
 				2A2CDC9E19FB441200BDF4E3 /* DetailViewController.swift in Sources */,
-				10644A491BE1725A0014122A /* KeychainItemWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
