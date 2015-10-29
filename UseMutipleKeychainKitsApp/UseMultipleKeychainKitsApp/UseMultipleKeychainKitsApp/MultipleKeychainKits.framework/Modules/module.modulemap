@@ -1,0 +1,10 @@
+framework module MultipleKeychainKits {
+  umbrella header "MultipleKeychainKits.h"
+
+  export *
+  module * { export * }
+}
+
+module MultipleKeychainKits.Swift {
+    header "MultipleKeychainKits-Swift.h"
+}

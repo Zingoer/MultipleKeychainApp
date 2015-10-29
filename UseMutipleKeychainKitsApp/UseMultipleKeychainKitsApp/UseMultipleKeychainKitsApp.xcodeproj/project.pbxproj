@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10644A851BE274860014122A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10644A841BE274860014122A /* AppDelegate.swift */; };
+		10644A871BE274860014122A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10644A861BE274860014122A /* ViewController.swift */; };
+		10644A8A1BE274860014122A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10644A881BE274860014122A /* Main.storyboard */; };
+		10644A8D1BE274860014122A /* UseMultipleKeychainKitsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 10644A8B1BE274860014122A /* UseMultipleKeychainKitsApp.xcdatamodeld */; };
+		10644A8F1BE274860014122A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10644A8E1BE274860014122A /* Assets.xcassets */; };
+		10644A921BE274860014122A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10644A901BE274860014122A /* LaunchScreen.storyboard */; };
+		10644A9D1BE274860014122A /* UseMultipleKeychainKitsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10644A9C1BE274860014122A /* UseMultipleKeychainKitsAppTests.swift */; };
+		10644AA81BE274870014122A /* UseMultipleKeychainKitsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10644AA71BE274870014122A /* UseMultipleKeychainKitsAppUITests.swift */; };
+		10644AB91BE274D70014122A /* MultipleKeychainKits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10644AB71BE274D20014122A /* MultipleKeychainKits.framework */; };
+		10644ABA1BE274D70014122A /* MultipleKeychainKits.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10644AB71BE274D20014122A /* MultipleKeychainKits.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10644A991BE274860014122A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10644A791BE274860014122A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10644A801BE274860014122A;
+			remoteInfo = UseMultipleKeychainKitsApp;
+		};
+		10644AA41BE274870014122A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10644A791BE274860014122A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10644A801BE274860014122A;
+			remoteInfo = UseMultipleKeychainKitsApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		10644ABB1BE274D70014122A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				10644ABA1BE274D70014122A /* MultipleKeychainKits.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		10644A811BE274860014122A /* UseMultipleKeychainKitsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UseMultipleKeychainKitsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10644A841BE274860014122A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		10644A861BE274860014122A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		10644A891BE274860014122A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		10644A8C1BE274860014122A /* UseMultipleKeychainKitsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UseMultipleKeychainKitsApp.xcdatamodel; sourceTree = "<group>"; };
+		10644A8E1BE274860014122A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10644A911BE274860014122A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		10644A931BE274860014122A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10644A981BE274860014122A /* UseMultipleKeychainKitsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseMultipleKeychainKitsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10644A9C1BE274860014122A /* UseMultipleKeychainKitsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseMultipleKeychainKitsAppTests.swift; sourceTree = "<group>"; };
+		10644A9E1BE274860014122A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10644AA31BE274860014122A /* UseMultipleKeychainKitsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseMultipleKeychainKitsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10644AA71BE274870014122A /* UseMultipleKeychainKitsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseMultipleKeychainKitsAppUITests.swift; sourceTree = "<group>"; };
+		10644AA91BE274870014122A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10644AB71BE274D20014122A /* MultipleKeychainKits.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipleKeychainKits.framework; path = UseMultipleKeychainKitsApp/MultipleKeychainKits.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10644A7E1BE274860014122A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10644AB91BE274D70014122A /* MultipleKeychainKits.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10644A951BE274860014122A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10644AA01BE274860014122A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10644A781BE274860014122A = {
+			isa = PBXGroup;
+			children = (
+				10644A831BE274860014122A /* UseMultipleKeychainKitsApp */,
+				10644A9B1BE274860014122A /* UseMultipleKeychainKitsAppTests */,
+				10644AA61BE274870014122A /* UseMultipleKeychainKitsAppUITests */,
+				10644A821BE274860014122A /* Products */,
+				10644AB71BE274D20014122A /* MultipleKeychainKits.framework */,
+			);
+			sourceTree = "<group>";
+		};
+		10644A821BE274860014122A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10644A811BE274860014122A /* UseMultipleKeychainKitsApp.app */,
+				10644A981BE274860014122A /* UseMultipleKeychainKitsAppTests.xctest */,
+				10644AA31BE274860014122A /* UseMultipleKeychainKitsAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10644A831BE274860014122A /* UseMultipleKeychainKitsApp */ = {
+			isa = PBXGroup;
+			children = (
+				10644A841BE274860014122A /* AppDelegate.swift */,
+				10644A861BE274860014122A /* ViewController.swift */,
+				10644A881BE274860014122A /* Main.storyboard */,
+				10644A8E1BE274860014122A /* Assets.xcassets */,
+				10644A901BE274860014122A /* LaunchScreen.storyboard */,
+				10644A931BE274860014122A /* Info.plist */,
+				10644A8B1BE274860014122A /* UseMultipleKeychainKitsApp.xcdatamodeld */,
+			);
+			path = UseMultipleKeychainKitsApp;
+			sourceTree = "<group>";
+		};
+		10644A9B1BE274860014122A /* UseMultipleKeychainKitsAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				10644A9C1BE274860014122A /* UseMultipleKeychainKitsAppTests.swift */,
+				10644A9E1BE274860014122A /* Info.plist */,
+			);
+			path = UseMultipleKeychainKitsAppTests;
+			sourceTree = "<group>";
+		};
+		10644AA61BE274870014122A /* UseMultipleKeychainKitsAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				10644AA71BE274870014122A /* UseMultipleKeychainKitsAppUITests.swift */,
+				10644AA91BE274870014122A /* Info.plist */,
+			);
+			path = UseMultipleKeychainKitsAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10644A801BE274860014122A /* UseMultipleKeychainKitsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10644AAC1BE274870014122A /* Build configuration list for PBXNativeTarget "UseMultipleKeychainKitsApp" */;
+			buildPhases = (
+				10644A7D1BE274860014122A /* Sources */,
+				10644A7E1BE274860014122A /* Frameworks */,
+				10644A7F1BE274860014122A /* Resources */,
+				10644ABB1BE274D70014122A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UseMultipleKeychainKitsApp;
+			productName = UseMultipleKeychainKitsApp;
+			productReference = 10644A811BE274860014122A /* UseMultipleKeychainKitsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		10644A971BE274860014122A /* UseMultipleKeychainKitsAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10644AAF1BE274870014122A /* Build configuration list for PBXNativeTarget "UseMultipleKeychainKitsAppTests" */;
+			buildPhases = (
+				10644A941BE274860014122A /* Sources */,
+				10644A951BE274860014122A /* Frameworks */,
+				10644A961BE274860014122A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10644A9A1BE274860014122A /* PBXTargetDependency */,
+			);
+			name = UseMultipleKeychainKitsAppTests;
+			productName = UseMultipleKeychainKitsAppTests;
+			productReference = 10644A981BE274860014122A /* UseMultipleKeychainKitsAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		10644AA21BE274860014122A /* UseMultipleKeychainKitsAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10644AB21BE274870014122A /* Build configuration list for PBXNativeTarget "UseMultipleKeychainKitsAppUITests" */;
+			buildPhases = (
+				10644A9F1BE274860014122A /* Sources */,
+				10644AA01BE274860014122A /* Frameworks */,
+				10644AA11BE274860014122A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10644AA51BE274870014122A /* PBXTargetDependency */,
+			);
+			name = UseMultipleKeychainKitsAppUITests;
+			productName = UseMultipleKeychainKitsAppUITests;
+			productReference = 10644AA31BE274860014122A /* UseMultipleKeychainKitsAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10644A791BE274860014122A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Zingoer;
+				TargetAttributes = {
+					10644A801BE274860014122A = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = UX9NKEF9TX;
+					};
+					10644A971BE274860014122A = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 10644A801BE274860014122A;
+					};
+					10644AA21BE274860014122A = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 10644A801BE274860014122A;
+					};
+				};
+			};
+			buildConfigurationList = 10644A7C1BE274860014122A /* Build configuration list for PBXProject "UseMultipleKeychainKitsApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10644A781BE274860014122A;
+			productRefGroup = 10644A821BE274860014122A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10644A801BE274860014122A /* UseMultipleKeychainKitsApp */,
+				10644A971BE274860014122A /* UseMultipleKeychainKitsAppTests */,
+				10644AA21BE274860014122A /* UseMultipleKeychainKitsAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10644A7F1BE274860014122A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10644A921BE274860014122A /* LaunchScreen.storyboard in Resources */,
+				10644A8F1BE274860014122A /* Assets.xcassets in Resources */,
+				10644A8A1BE274860014122A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10644A961BE274860014122A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10644AA11BE274860014122A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10644A7D1BE274860014122A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10644A8D1BE274860014122A /* UseMultipleKeychainKitsApp.xcdatamodeld in Sources */,
+				10644A871BE274860014122A /* ViewController.swift in Sources */,
+				10644A851BE274860014122A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10644A941BE274860014122A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10644A9D1BE274860014122A /* UseMultipleKeychainKitsAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10644A9F1BE274860014122A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10644AA81BE274870014122A /* UseMultipleKeychainKitsAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10644A9A1BE274860014122A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10644A801BE274860014122A /* UseMultipleKeychainKitsApp */;
+			targetProxy = 10644A991BE274860014122A /* PBXContainerItemProxy */;
+		};
+		10644AA51BE274870014122A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10644A801BE274860014122A /* UseMultipleKeychainKitsApp */;
+			targetProxy = 10644AA41BE274870014122A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		10644A881BE274860014122A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10644A891BE274860014122A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		10644A901BE274860014122A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10644A911BE274860014122A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		10644AAA1BE274870014122A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		10644AAB1BE274870014122A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10644AAD1BE274870014122A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/UseMultipleKeychainKitsApp",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/UseMultipleKeychainKitsApp/**",
+				);
+				INFOPLIST_FILE = UseMultipleKeychainKitsApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inbay.UseMultipleKeychainKitsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		10644AAE1BE274870014122A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/UseMultipleKeychainKitsApp",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/UseMultipleKeychainKitsApp/**",
+				);
+				INFOPLIST_FILE = UseMultipleKeychainKitsApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inbay.UseMultipleKeychainKitsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		10644AB01BE274870014122A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = UseMultipleKeychainKitsAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zingoer.UseMultipleKeychainKitsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UseMultipleKeychainKitsApp.app/UseMultipleKeychainKitsApp";
+			};
+			name = Debug;
+		};
+		10644AB11BE274870014122A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = UseMultipleKeychainKitsAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zingoer.UseMultipleKeychainKitsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UseMultipleKeychainKitsApp.app/UseMultipleKeychainKitsApp";
+			};
+			name = Release;
+		};
+		10644AB31BE274870014122A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UseMultipleKeychainKitsAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zingoer.UseMultipleKeychainKitsAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = UseMultipleKeychainKitsApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		10644AB41BE274870014122A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UseMultipleKeychainKitsAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zingoer.UseMultipleKeychainKitsAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = UseMultipleKeychainKitsApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10644A7C1BE274860014122A /* Build configuration list for PBXProject "UseMultipleKeychainKitsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10644AAA1BE274870014122A /* Debug */,
+				10644AAB1BE274870014122A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10644AAC1BE274870014122A /* Build configuration list for PBXNativeTarget "UseMultipleKeychainKitsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10644AAD1BE274870014122A /* Debug */,
+				10644AAE1BE274870014122A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		10644AAF1BE274870014122A /* Build configuration list for PBXNativeTarget "UseMultipleKeychainKitsAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10644AB01BE274870014122A /* Debug */,
+				10644AB11BE274870014122A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		10644AB21BE274870014122A /* Build configuration list for PBXNativeTarget "UseMultipleKeychainKitsAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10644AB31BE274870014122A /* Debug */,
+				10644AB41BE274870014122A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		10644A8B1BE274860014122A /* UseMultipleKeychainKitsApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				10644A8C1BE274860014122A /* UseMultipleKeychainKitsApp.xcdatamodel */,
+			);
+			currentVersion = 10644A8C1BE274860014122A /* UseMultipleKeychainKitsApp.xcdatamodel */;
+			path = UseMultipleKeychainKitsApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 10644A791BE274860014122A /* Project object */;
+}
